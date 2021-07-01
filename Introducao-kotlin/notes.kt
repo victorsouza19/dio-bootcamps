@@ -209,4 +209,89 @@ fun main() {
 
     println(verify)
    
+   	val c:Int? = 8
+
+   val verify2 = a ?: c ?: "são nulos"
+    println(verify2)
+}
+
+-----------------------------------------------
+
+////EXEMPLOS DE ATRIBUIÇÃO
+fun main() {
+	val a = 1
+    val b = 2 
+    
+    val MaxValue = if (a > b) a else if (a < b) b else b
+   	println(MaxValue)
+    
+    // ou até
+  
+    val MinValue = if (a > b){
+        println("$b é menor que $a")
+        b
+    } else if (a < b){
+        println("$a é menor que $b")
+        a
+    } else {
+        println("$b é igual a $a")
+        a
+    }
+}
+
+-----------------------------------------------
+
+//// WHEN = SWITCH NAS OUTRAS LINGUAS
+fun main() {
+    val a = 0
+    val b = 1
+    
+	when {
+        a > b -> {a}
+        a != b -> {println("diferentes")}
+        b == 0 -> {b}
+        else -> {println("passou tudo")}
+    } 
+}
+
+// EXEMPLOS DE WHEN NA PRÁTICA
+
+fun main() {
+    
+	val grade = (0..10).random()
+    println(grade.getStudentStatus())
+    
+}
+
+fun Int.getStudentStatus():String{
+    println("nota $this")
+    return when(this){
+        in 0..4 -> "Reprovado"
+        in 5..7 -> "Tá na média, estude mais na próxima!"
+        in 8..9 -> "Bom, quase lá!"
+        10 -> "Excelente!"
+        else -> "Erro"
+    }
+    
+}
+
+----------------------------------------------
+
+for(variavelIndex in/until/downTo faixa de valores/condicional step intervalo)
+
+// EXEMPLOS
+fun main(){
+
+    for(i in 0..20 step 2) {
+        println("$i")
+    }
+
+    for(i in 0 until 10){
+        println("$i")
+    }
+
+    for(i in 10 downTo 0){
+        println("$i")
+    }
+
 }
