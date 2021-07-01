@@ -137,3 +137,76 @@ fun main() {
    println(welcome+name)
    
 }
+
+--------------------------------------------------
+// TRABALHANDO COM EMPTY E BLANK
+// empty = não tem nenhum valor | blank = tem valor mas é em branco
+
+fun main() {
+    val empty = ""
+    val blank = "  "
+    
+    println("Tamanho empty: " + empty.length)
+    println("Tamanho blank: " + blank.length)
+    
+    println("\nEmpty é empty e blank? " + (empty.isEmpty() && empty.isBlank()))
+   	println("Blank é empty e blank? " + (blank.isEmpty() && empty.isBlank()))
+   	
+}
+
+-------------------------------------------------
+
+////EXEMPLOS DE FUNÇÃO
+
+// esqueleto
+private fun nomeDaFuncao(nome:Tipo):TipoRetorno {
+	return
+}
+
+private fun getFullName(name:String, lastName:String):String {
+    val fullname = "$name $lastName"
+    return fullname 
+}
+
+    //ou
+
+private fun getFullName(name:String, lastName:String):String {    
+    return "$name $lastName"
+}
+
+// ou ainda a FUNÇÃO SINGLE LINE
+
+private fun getFullName(name:String, lastName:String) = "$name $lastName"
+
+------------------------------------------------
+
+//EXEMPLOS DE FUNÇÃO DE ORDEM SUPERIOR
+fun main() {
+
+   var z:Int
+    
+   z = calculate(34,90,::sum)
+   println(z)
+   z = calculate(34,90){a,b -> a*b}
+   println(z)
+       
+}
+
+fun sum(a1:Int, a2:Int) = a1.plus(a2)
+
+fun calculate(n1:Int, n2:Int,operation: (Int,Int)->Int):Int{
+    val result = operation(n1,n2)
+    return result
+}
+
+----------------------------------------------
+
+// ELVIS OPERATOR
+
+fun main() {
+	val a:String? = null
+    val verify = a ?: "não sou nulo mais"
+
+    println(verify)
+   
+}
