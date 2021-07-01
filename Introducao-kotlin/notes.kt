@@ -294,4 +294,15 @@ fun main(){
         println("$i")
     }
 
+    letters()
+
+}
+
+fun letters(){
+    val sArray = "Olha essa String!"
+    for(l in sArray){
+        // pega cada posição do array
+        
+        print(l.toUpperCase() + " ")
+    }
 }
