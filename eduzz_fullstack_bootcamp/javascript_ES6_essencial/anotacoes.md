@@ -8,16 +8,16 @@
 
 - **ECMAScript** > *ECMA International* > especificação da Linguagem de Programação, mantendo padrões entre as lps.
 
-    Existem propostas para melhorias e padronizações do ECMAScript(para membros do TC39):
-    -- https://github.com/tc39/proposals
+    >Existem propostas para melhorias e padronizações do ECMAScript(para membros do TC39):
+    >https://github.com/tc39/proposals
 
 - **Últimas especificações implementadas:**
-    -- **ES2018:**
+    * **ES2018:**
         - Operadoeres res/spread
         - Iteração assíncrona
         - Promise.prototype.finally()
     
-    -- **ES.Next**
+    * **ES.Next**
         - Não está disponível oficialmente, mas trará futuras implementações. Porém pode ser usada pelo Babel.
 
 - **Babel:** Transforma a implementação de funcionalidades novas em uma implementação que suporta o maior número de browsers(**ES2015**)
@@ -31,14 +31,14 @@
 - **Tipagem dinâmica:** Não é necessário explicitar o tipo da variável no momento da criação, e isso pode causar problemas, para isso *temos o Typescript que adiciona tipos e funcionalidades que o Javascript não tem por padrão*.
     -- https://www.typescriptlang.org/
 
-Temos também o Flow, mas não possui todos os recursos do Typescript.
+    >Temos também o Flow, mas não possui todos os recursos do Typescript.
 
 - **Funções de primeira classe e ordem maior:** Função que pode ser atribuida à uma variável, estrutura de dados, passada por argumentos ou até retornada em outras funções.
 
 - **Closure:** capacidade de uma função lembrar do ambiente em que foi criada.
 
 - **Currying:** transformar função com *n* parâmetros em uma única função. Exemplo:
-    <code> 
+    ~~~~
     function multiplica(a){
         return function(b){
             return a * b;
@@ -51,11 +51,11 @@ Temos também o Flow, mas não possui todos os recursos do Typescript.
     funcao2(1); // retorna 2 
     funcao2(2); // retorna 4
     funcao2(3); // retorna 6
-    <code>
+    ~~~~
 
 - **Hoisting:** declarações são elevadas ao escopo(bloco, funcão ou global). As variáveis são reconhecidas, mesmo antes de um valor ser atribuido a elas.
 
--**Imutabilidade:** após a criação, não há edição, e sim ocorre uma nova criação, sem alterar a antiga. Por exemplo um objeto com x atributos, que ao executar uma função deverá retornar o conjunto dos atributos. Essa função pode gerar um novo atributo apenas durante a sua execução. Mas o objeto original permanecerá imutável.
+- **Imutabilidade:** após a criação, não há edição, e sim ocorre uma nova criação, sem alterar a antiga. Por exemplo um objeto com x atributos, que ao executar uma função deverá retornar o conjunto dos atributos. Essa função pode gerar um novo atributo apenas durante a sua execução. Mas o objeto original permanecerá imutável.
 
 ## Tipos e Variáveis
 
@@ -64,11 +64,3 @@ Temos também o Flow, mas não possui todos os recursos do Typescript.
 - let:
 
 - const:
-
-
-
-
-
-
-
-
