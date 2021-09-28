@@ -59,8 +59,55 @@
 
 ## Tipos e Variáveis
 
-- var: 
+>    //escopo global 
 
-- let:
+>    { 
+>    // escopo de bloco 
+>    }
 
-- const:
+>    function test(){
+>        //escopo de função
+>    }
+
+- **var:** não obedece os tipos de escopo e pode ser alterado.
+
+- **let:** obedece os tipos de escopo  e pode ser alterado.
+
+- **const:** obedece os tipos de escopo e não podemos alterar o valor de uma const, mas podemos trocar as propriedades de um objeto ou array
+    >Exemplo objeto:
+    ><code>const user= {name= 'Victor' };</code> 
+    > pode virar 
+    ><code> user.name = 'Sofia';</code>
+
+No caso do array podemos adicionar novos tens, remover e alterar diretamente também.
+    >Exemplo Array:
+    ><code>const user= {name= 'Victor' };</code> 
+    > pode virar 
+    ><code> user.name = 'Sofia';</code>
+
+
+### 6 tipos primitivos:
+
+- **string:** representa qualquer tipo de texto.
+    > **funções úteis para string podem ser encontradas no arquivo anotacoes.js** 
+
+- **number:** representa somente números.
+
+- **boolean:** representa true ou false
+
+- **null:** representa um valor nulo
+
+- **undefined:** representa uma variável que existe mas seu valor ainda não foi atribuido.
+
+- **symbol:** permite criar valores únicos.
+
+
+### Outros tipos:
+
+- **Object:** basicamente é um objeto, que pode conter atributos.
+
+- **function:** também é um objeto, e permite que o mesmo seja chamado.
+
+- **array:** também é objeto, mas possui uma relação com seus itens de acordo com a posição e valor.
+
+
