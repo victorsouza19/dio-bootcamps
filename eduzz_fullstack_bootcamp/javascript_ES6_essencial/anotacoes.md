@@ -79,7 +79,8 @@
     > pode virar 
     ><code> user.name = 'Sofia';</code>
 
-No caso do array podemos adicionar novos tens, remover e alterar diretamente também.
+    No caso do array podemos adicionar novos tens, remover e alterar diretamente também.
+    
     >Exemplo Array:
     ><code>const user= {name= 'Victor' };</code> 
     > pode virar 
